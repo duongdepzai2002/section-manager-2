@@ -100,7 +100,7 @@
             </div>
             <div class="manage-main">
                 <div class="manage-main__heading">
-                    <i class="manage-main__heading-icon fa-solid fa-burger"></i>
+                    <i class="manage-main__heading-icon fa-brands fa-servicestack"></i>
                     <span class="manage-main__heading-title">Quản lý dịch vụ</span>
                 </div>
 
@@ -116,10 +116,11 @@
                 <div class="manage-info">
                     <div class="manage-info__head">
                         <div class="sections">
-                            <span class="section section-bold section-1">Mã DV</span>
-                            <span class="section section-bold">Tên DV</span>
-                            <span class="section section-bold">Mô tả DV</span>
-                            <span class="section section-bold">Giá</span>
+                            <span class="section section-bold section-1">Ngày</span>
+                            <span class="section section-bold">Giờ</span>
+                            <span class="section section-bold">Vị trí</span>
+                            <span class="section section-bold">Nhân viên dịch vụ</span>
+                            <span class="section section-bold">Dịch vụ</span>
                             <span class="cpn cpn-1">
                                 <i class="far fa-plus"></i>
                             </span>
@@ -133,14 +134,16 @@
         </div>
         <div class="add">
             <form action="" class="form-add">
-                <label for="" class="form-text">Id:</label>
+                <label for="" class="form-text">Ngày:</label>
                 <input type="text" class="form-input-1 form-input">
-                <label for="" class="form-text">Tên DV:</label>
+                <label for="" class="form-text">Giờ:</label>
                 <input type="text" class="form-input-2 form-input">
-                <label for="" class="form-text">Mô tả DV:</label>
+                <label for="" class="form-text">Vị trí:</label>
                 <input type="text" class="form-input-3 form-input">
-                <label for="" class="form-text">Giá:</label>
+                <label for="" class="form-text">Nhân viên dịch vụ:</label>
                 <input type="text" class="form-input-4 form-input">
+                <label for="" class="form-text">Nhân viên dịch vụ:</label>
+                <input type="text" class="form-input-5 form-input">
                 <div class="submit">Thêm</div>
             </form>
         </div>
@@ -170,12 +173,14 @@
         var inputValue2 = $('.form-input-2').value
         var inputValue3 = $('.form-input-3').value
         var inputValue4 = $('.form-input-4').value
+        var inputValue5 = $('.form-input-5').value
 
         var item = {
             id: inputValue1,
             name: inputValue2,
             age: inputValue3,
             gender: inputValue4,
+            service: inputValue5,
         }
         data.push(item)
 
@@ -188,6 +193,7 @@
                             <span contenteditable="true" class="section section-name">${items.name}</span>
                             <span contenteditable="true" class="section">${items.age}</span>
                             <span contenteditable="true" class="section">${items.gender}</span>
+                            <span contenteditable="true" class="section">${items.service}</span>
                         </div>
                         <div class="manage-info__wrap-component">
                             <span class="cpn cpn-2">
@@ -207,10 +213,12 @@
         const inputForm2 = $('.form-input-2')
         const inputForm3 = $('.form-input-3')
         const inputForm4 = $('.form-input-4')
+        const inputForm5 = $('.form-input-5')
         inputForm1.value = ''
         inputForm2.value = ''
         inputForm3.value = ''
         inputForm4.value = ''
+        inputForm5.value = ''
 
         const btnDeletes = $$('.cpn-3')
         const component = $$('.manage-info__elements')
