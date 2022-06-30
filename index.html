@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link rel="shortcut icon" type="image/jpg" href="./pepe.jpg"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./responsive.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="navbar-title">
+                <div class="navbar-element__item">
+                    <i class="icon-big fa-solid fa-brain"></i>
+                    <span>ADMIN PANEL</span>
+                </div>
+            </div>
+            <div class="navbar-element__list">
+                <div class="navbar-element__item hide-on-mobile">
+                    <i class="fa-solid fa-house"></i>
+                    <span>Trang chủ</span>
+                </div>
+
+                <div class="navbar-element__item hide-on-mobile">
+                    <i class="fa-solid fa-rocket"></i>
+                    <span>Bộ đệm</span>
+                    <i class="fa-solid fa-angle-down"></i>
+                </div>
+
+                <div class="navbar-element__item hide-on-mobile">
+                    <i class="fa-solid fa-circle-question"></i>
+                    <span>Trợ giúp</span>
+                    <i class="fa-solid fa-angle-down"></i>
+                </div>
+
+                <div class="navbar-element__item navbar-element__item-jvs">
+                    <i class="icon-big fa-solid fa-circle-user"></i>
+                    <span>Sung Jin Woo</span>
+                    <i class="fa-solid fa-angle-down"></i>
+                </div>
+
+                <a href="#" class="sign-out">
+                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                </a>
+            </div>
+        </div>
+        <div class="content">
+            <div class="dashboard"> 
+                <div class="dashboard-header">
+                    <div class="dashboard-admin">
+                        <i class="dashboard-admin__avt fa-solid fa-circle-user"></i>
+                        <div class="dashboard-admin__info">
+                            <span class="admin-name">Sung Jin Woo</span>
+                            <span class="admin-nickname">Người quản trị chính</span>
+                        </div>
+                    </div>
+
+                    <i class="dashboard-header__setting fa-solid fa-gear"></i>
+                </div>
+
+                <div class="dashboard-text">chức năng quản trị</div>
+
+                <ul class="dashboard-list">
+                    <li class="dashboard-item">
+                        <div class="dashboard-item-wrap">
+                            <i class="dashboard-item__icon fa-solid fa-clock-rotate-left"></i>
+                            <p class="dashboard-item__title">Lịch sử hoạt động</p>
+                        </div>
+                        <i class="icon-more fas fa-angle-down"></i>
+                    </li>
+                    <li class="dashboard-item">
+                        <div class="dashboard-item-wrap">
+                            <i class="dashboard-item__icon fa-solid fa-users"></i>
+                            <p class="dashboard-item__title dashboard-item__title--margin-left">Quản lý khách hàng</p>
+                        </div>
+                        <i class="icon-more fas fa-angle-down"></i>
+                    </li>
+                    <li class="dashboard-item">
+                        <div class="dashboard-item-wrap">
+                            <i class="dashboard-item__icon fa-solid fa-burger"></i>
+                            <p class="dashboard-item__title">Quản lý sản phẩm</p>
+                        </div>
+                        <i class="icon-more fas fa-angle-down"></i>
+                    </li>
+                    <li class="dashboard-item active">
+                        <div class="dashboard-item-wrap">
+                            <i class="dashboard-item__icon fa-brands fa-servicestack"></i>
+                            <p class="dashboard-item__title">Quản lý dịch vụ</p>
+                        </div>
+                        <i class="icon-more fas fa-angle-down"></i>
+                    </li>
+                </ul>
+            </div>
+            <div class="manage-main">
+                <div class="manage-main__heading">
+                    <i class="manage-main__heading-icon fa-solid fa-burger"></i>
+                    <span class="manage-main__heading-title">Quản lý dịch vụ</span>
+                </div>
+
+                <div class="manage-main__current">
+                    <div class="manage-main__root">
+                        <i class="manage-main__root-icon fa-solid fa-house"></i>
+                        <span class="manage-main__root-text">Admin</span>
+                        <span class="manage-main__root-way">/</span>
+                        <span class="manage-main__root-curr">Quản lý dịch vụ</span>
+                    </div>
+                </div>
+
+                <div class="manage-info">
+                    <div class="manage-info__head">
+                        <div class="sections">
+                            <span class="section section-bold section-1">Mã DV</span>
+                            <span class="section section-bold">Tên DV</span>
+                            <span class="section section-bold">Mô tả DV</span>
+                            <span class="section section-bold">Giá</span>
+                            <span class="cpn cpn-1">
+                                <i class="far fa-plus"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="manage-info-wrapper">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="add">
+            <form action="" class="form-add">
+                <label for="" class="form-text">Id:</label>
+                <input type="text" class="form-input-1 form-input">
+                <label for="" class="form-text">Tên DV:</label>
+                <input type="text" class="form-input-2 form-input">
+                <label for="" class="form-text">Mô tả DV:</label>
+                <input type="text" class="form-input-3 form-input">
+                <label for="" class="form-text">Giá:</label>
+                <input type="text" class="form-input-4 form-input">
+                <div class="submit">Thêm</div>
+            </form>
+        </div>
+    </div>
+</body>
+
+<script>
+    const $ = document.querySelector.bind(document)
+    const $$ = document.querySelectorAll.bind(document)
+
+    const admin = $('.navbar-element__item-jvs')
+    const signOut = $('.sign-out')
+    admin.onclick = function(e) {
+        signOut.style.display = 'flex'
+    }
+
+    signOut.onclick = function() {
+        this.href = 'https://duongdepzai2002.github.io/Website-Gkitchen/?fbclid=IwAR347o1j-6Q9U1mgFNoiY46XVWmcWu5kTs_tcJcni49AFCgM5i3edgOQ2JQ'
+    }
+    // array
+    var data = [];
+    // form handle
+    const submitBtn = $('.submit')
+    const manageInfoWrapper = $('.manage-info-wrapper')
+    submitBtn.onclick = function() {
+        var inputValue1 = $('.form-input-1').value
+        var inputValue2 = $('.form-input-2').value
+        var inputValue3 = $('.form-input-3').value
+        var inputValue4 = $('.form-input-4').value
+
+        var item = {
+            id: inputValue1,
+            name: inputValue2,
+            age: inputValue3,
+            gender: inputValue4,
+        }
+        data.push(item)
+
+        var htmls = data.map(function(items, index) {
+            return `
+                <div class="manage-info__elements">
+                    <div class="manage-info__element">
+                        <div class="sections">
+                            <span contenteditable="true" class="section section-1">${items.id}</span>
+                            <span contenteditable="true" class="section section-name">${items.name}</span>
+                            <span contenteditable="true" class="section">${items.age}</span>
+                            <span contenteditable="true" class="section">${items.gender}</span>
+                        </div>
+                        <div class="manage-info__wrap-component">
+                            <span class="cpn cpn-2">
+                                <i class="fas fa-tools"></i>
+                            </span>
+                            <span class="cpn cpn-3">
+                                <i class="fas fa-trash"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            `
+        })
+
+        manageInfoWrapper.innerHTML = htmls.join('')
+        const inputForm1 = $('.form-input-1')
+        const inputForm2 = $('.form-input-2')
+        const inputForm3 = $('.form-input-3')
+        const inputForm4 = $('.form-input-4')
+        inputForm1.value = ''
+        inputForm2.value = ''
+        inputForm3.value = ''
+        inputForm4.value = ''
+
+        const btnDeletes = $$('.cpn-3')
+        const component = $$('.manage-info__elements')
+        btnDeletes.forEach(function(btnDelete, index) {
+        btnDelete.onclick = function() {
+            component[index].style.display = 'none'
+        }
+    })
+    }
+
+    // Delete
+    const btnDeletes = $$('.cpn-3')
+    const component = $$('.manage-info__elements')
+    btnDeletes.forEach(function(btnDelete, index) {
+        btnDelete.onclick = function() {
+            component[index].style.display = 'none'
+        }
+    })
+    // Btn add
+    const addForm = $('.add')
+    const addBtn = $('.cpn-1')
+    addBtn.onclick = function() {
+       addForm.style.display = 'block'
+    }
+</script>
+</html>
